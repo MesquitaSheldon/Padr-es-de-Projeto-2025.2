@@ -9,7 +9,6 @@ public class LogArquivo {
 	private static final String CAMINHO_ARQUIVO = "src/log_operacoes.txt";
 
     public static void salvar(String mensagem) {
-    	System.out.println(mensagem);
         try (FileWriter fw = new FileWriter(CAMINHO_ARQUIVO, true);
              PrintWriter pw = new PrintWriter(fw)) {
             pw.println(mensagem);
@@ -18,4 +17,5 @@ public class LogArquivo {
             e.printStackTrace();
         }
     }
+
 }
