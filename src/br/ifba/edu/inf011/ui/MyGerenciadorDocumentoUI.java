@@ -69,7 +69,6 @@ public class MyGerenciadorDocumentoUI extends AbstractGerenciadorDocumentosUI{
 	}
 	
 	protected void undo() {
-		//TODO BUG QUANDO EXCLUI UM DOC DA LISTA
 		this.commandManager.undo();
 		this.atual = this.controller.getDocumentoAtual();
 		this.atualizarListaDocs();
@@ -137,7 +136,6 @@ public class MyGerenciadorDocumentoUI extends AbstractGerenciadorDocumentosUI{
 	}
 	
 	protected void tornarUrgente() {
-		//TODO
 		try {
 			UrgentDoc cmd = new UrgentDoc(
 					this.controller,
@@ -165,3 +163,4 @@ public class MyGerenciadorDocumentoUI extends AbstractGerenciadorDocumentosUI{
     }	
 
 }
+
