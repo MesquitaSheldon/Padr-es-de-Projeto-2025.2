@@ -4,5 +4,6 @@ public interface Command {
 	void execute();
     void undo();
     Command clone();
-    String getLogDescription(); // Método para auxiliar o Log
+    String getLogDescription();
 }
+
